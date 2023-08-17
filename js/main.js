@@ -119,3 +119,8 @@
     );
   });
 })(jQuery);
+
+var video = document.getElementsByClassName("video");
+  video.addEventListener("loadedmetadata", function() {
+    video.currentTime = 30;
+  });
